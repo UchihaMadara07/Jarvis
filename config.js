@@ -63,7 +63,7 @@ module.exports = {
   TIMEZONE: process.env.TIMEZONE || "Asia/Kolkata",
   STARTING_MSG: toBool(process.env.STARTING_MSG || "true"),
   STATUS_REACTION_EMOJI: process.env.STATUS_REACTION_EMOJI || "🌼,♥️",
-  STATUS_REACTION: toBool(process.env.STATUS_REACTION || "false"),
+  STATUS_REACTION: toBool(process.env.STATUS_REACTION || "true"),
   GEMINI: process.env.GEMINI || "null",
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || '',
