@@ -13,17 +13,14 @@ Jarvis - Loki-Xer
 const {
     bot,
     Vote,
-    isUrl,
-    sleep,
     System,
     config,
     getData,
     setData,
     isPrivate,
-    warnMessage,
-    extractUrlsFromText
+    warnMessage
 } = require("../lib/");
-const { parsedJid, isAdmin, isBotAdmins, getAllGroups } = require("./client/");
+const { parsedJid, isAdmin, isBotAdmins, getAllGroups, isUrl, sleep, extractUrlsFromText } = require("./client/");
 
 System({
     pattern: 'add ?(.*)',
@@ -609,3 +606,4 @@ System({
     };
     await message.send(match === "all" ? '_*Reject all*_' : '_*Reject selected members*_');
 });
+

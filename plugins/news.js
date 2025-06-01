@@ -1,4 +1,16 @@
-const { System, isPrivate, getJson, LokiXer, IronMan } = require("../lib/");
+/*------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Copyright (C) 2023 Loki - Xer.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+Jarvis - Loki-Xer 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+const { System, isPrivate } = require("../lib/");
+const { getJson, LokiXer, IronMan } = require('./client/');
 
 System({
   pattern: 'manorama',

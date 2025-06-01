@@ -12,25 +12,19 @@ Jarvis - Loki-Xer
 
 const {
     yts,
-    isUrl,
     System,
     config,
-    toAudio,
-    getBuffer,
-    isPrivate,
     YtInfo,
     youtube,
-    IronMan,
-    AddMp3Meta,
-    extractUrlsFromText
+    isPrivate,
 } = require('../lib/');
+const { isUrl, toAudio, getBuffer, AddMp3Meta, extractUrlsFromText } = require('./client/');
 
 
 System({
-      pattern: 'video',
+      pattern: '(video|ytv)',
       fromMe: isPrivate,
       type: 'download',
-      alias: ['ytv'],
       desc: 'YouTube video downloader'
 }, async (message, match) => {
       match = match || message.reply_message.text;
@@ -73,10 +67,9 @@ System({
 }); */
 
 System({
-      pattern: 'yta ?(.*)',
+      pattern: '(yta|song)',
       fromMe: isPrivate,
       type: 'download',
-      alias: ["song"],
       desc: 'YouTube audio downloader'
 }, async (message, match) => {
       match = match || message.reply_message.text;
@@ -97,7 +90,7 @@ System({
 });
 
 System({
-    pattern: 'play ?(.*)',
+    pattern: 'play',
     fromMe: isPrivate,
     desc: 'YouTube video player',
     type: 'download',
@@ -154,7 +147,7 @@ System({
       }
   });
 
-System({
+/*System({
   on: 'text',
   fromMe: isPrivate,
   dontAddCommandList: true,
@@ -167,4 +160,4 @@ System({
   const q = data.download[qualitylist - 1];
   await message.reply(`_*Downloading ${data.title}*_`);
   await message.send({ url: q.download }, { caption: `*${data.title}*\n`, footer: `*Quality: ${q.quality}*` }, "video");
-});
+}); */
