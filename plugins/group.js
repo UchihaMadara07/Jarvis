@@ -23,7 +23,7 @@ const {
 const { parsedJid, isAdmin, isBotAdmins, getAllGroups, isUrl, sleep, extractUrlsFromText } = require("./client/");
 
 System({
-    pattern: 'add ?(.*)',
+    pattern: 'add',
     type: 'group',
     fromMe: true,
     onlyGroup: true,
@@ -69,7 +69,7 @@ System({
 
 
 System({
-    pattern: "kick$",
+    pattern: "kick",
     fromMe: true,
     type: "group",
     onlyGroup: true,
@@ -98,7 +98,7 @@ System({
 });
 
 System({
-	pattern: "promote$",
+	pattern: "promote",
 	fromMe: true,
 	type: "group",
 	onlyGroup: true,
@@ -116,7 +116,7 @@ System({
 
 
 System({
-	pattern: "demote$",
+	pattern: "demote",
 	fromMe: true,
 	type: "group",
 	onlyGroup: true,
@@ -134,7 +134,7 @@ System({
 
 
 System({
-    pattern: 'invite ?(.*)',
+    pattern: 'invite',
     fromMe: true,
     type: 'group',
     onlyGroup: true,
@@ -221,7 +221,7 @@ System({
 });
 
 System({
-    pattern: "gpp$",
+    pattern: "gpp",
     fromMe: true,
     type: "group",
     onlyGroup: true,
@@ -241,7 +241,7 @@ System({
 });
 
 System({
-    pattern: 'revoke ?(.*)',
+    pattern: 'revoke',
     fromMe: true,
     type: 'group',
     onlyGroup: true,
@@ -255,7 +255,7 @@ System({
 });
 
 System({
-    pattern: 'join ?(.*)',
+    pattern: 'join',
     fromMe: true,
     desc: "to join a group",
     type: 'group'
@@ -275,7 +275,7 @@ System({
 });
 
 System({
-    pattern: 'left ?(.*)',
+    pattern: 'left',
     fromMe: true,
     type: 'group',
     onlyGroup: true,
@@ -285,7 +285,7 @@ System({
 });
 
 System({
-    pattern: 'lock ?(.*)',
+    pattern: 'lock',
     fromMe: true,
     type: 'group',
     onlyGroup: true,
@@ -301,7 +301,7 @@ System({
 });
 
 System({
-    pattern: 'unlock ?(.*)',
+    pattern: 'unlock',
     fromMe: true,
     type: 'group',	
     onlyGroup: true,
@@ -317,7 +317,7 @@ System({
 
 
 System({
-	pattern: 'gname ?(.*)',
+	pattern: 'gname',
 	fromMe: true,
 	type: 'group',
 	onlyGroup: true,
@@ -338,7 +338,7 @@ System({
 });
 
 System({
-    pattern: 'gdesc ?(.*)',
+    pattern: 'gdesc',
     fromMe: true,
     type: 'group',
     onlyGroup: true,
@@ -359,7 +359,7 @@ System({
 })
 
 System({
-    pattern: 'gjid ?(.*)',
+    pattern: 'gjid',
     fromMe: true,
     type: 'group',
     desc: "To get group jid"
@@ -376,7 +376,7 @@ System({
 
 
 System({
-    pattern: 'ginfo ?(.*)',
+    pattern: 'ginfo',
     fromMe: true,
     type: 'group',
     desc: 'Shows group invite info',
@@ -487,7 +487,7 @@ System({
 });
 
 System({
-    pattern: "automute ?(.*)",
+    pattern: "automute",
     fromMe: true,
     onlyGroup: true,
     type: 'manage',
@@ -513,7 +513,7 @@ System({
 });
 
 System({
-    pattern: "autounmute ?(.*)",
+    pattern: "autounmute",
     fromMe: true,
     type: 'manage',
     onlyGroup: true,
@@ -539,7 +539,7 @@ System({
 });
 
 System({
-    pattern: "getmute ?(.*)",
+    pattern: "getmute",
     fromMe: true,
     type: 'manage',
     onlyGroup: true,
