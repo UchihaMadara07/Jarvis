@@ -30,4 +30,4 @@ setInterval(() => {
   ).catch(e =>
     console.log(`[${new Date().toISOString()}] Down! ${e.message}`)
   );
-}, 5 * 60 * 1000);
+}, 3 * 60 * 1000);
