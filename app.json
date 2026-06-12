@@ -1,9 +1,9 @@
 {
-    "name": "Jarvis",
+    "name": "jarvis",
     "version":"2.5.0",
     "description": "Jarvis Multi Device whatsapp bot",
     "logo": "https://graph.org/file/58ea74675af7836579a3a.jpg",
-    "keywords": ["whatsapp"],
+    "keywords": ["nodejs"],
     "repository": "https://github.com/Loki-Xer/Jarvis",
     "website": "https://github.com/Loki-Xer/Jarvis",
     "success_url": "/",
@@ -121,6 +121,12 @@
       "buildpacks": [
                     { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
                     { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git" }
-    ]
+    ],
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+    }
   }
   
