@@ -18,7 +18,7 @@ module.exports = {
   ANTIGSTATUS_MSG: process.env.ANTIGSTATUS_MSG || "```Group status not allowed!!```",
   ANTILINK_MSG: process.env.ANTILINK_MSG || "```Link Not allowed in this group!!```",
   ANTIWORD_MSG: process.env.ANTIWORD_MSG || "```Antiword deleted successfully!!```",
-  AUDIO_DATA: process.env.AUDIO_DATA || 'ʟᴏᴋɪ-xᴇʀ;ᴊᴀʀᴠɪꜱ;https://graph.org/file/58ea74675af7836579a3a.jpg',
+  AUDIO_DATA: process.env.AUDIO_DATA || '★ σвιтσ-кυη ★;ᴏʙɪᴛᴏ ᴜᴄʜɪʜᴀ;https://lokixer.onrender.com/file/omgxsfbpnfnra.png',
   AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_',
   AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group autounmuted!_',
   AUTO_DL: toBool(process.env.AUTO_DL || process.env.AUTO_DOWNLOAD),
